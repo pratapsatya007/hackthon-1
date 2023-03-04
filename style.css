@@ -1,0 +1,201 @@
+* {
+  /* removing default css properties*/
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header(external styling)*/
+header {
+  /* element selector*/
+  width: 100%;
+  height: 500px;
+  background-color: #293f50;
+  position: relative; /* using of position property*/
+  display: flex;
+}
+#title {
+  /* id selector*/
+  width: 200px;
+  height: 200px;
+  color: white;
+  letter-spacing: 0.5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  position: absolute; /*using of position property */
+  top: 30px;
+  left: 300px;
+  font-size: 48px;
+}
+#title:hover {
+  /*pseudo class*/
+  color: #648880;
+  cursor: pointer;
+}
+#navb {
+  width: 400px;
+  height: 50px;
+  background-color: #293f50;
+  display: flex; /*usage of display flex*/
+  position: absolute;
+  top: 115px;
+  right: 300px;
+}
+#navb > div {
+  /*child selector*/
+  width: 150px;
+  height: 20px;
+  background-color: #293f50;
+  flex-wrap: nowrap;
+  font-size: 15px;
+  margin: 5px 5px;
+  text-transform: uppercase;
+}
+div > a {
+  /*child selector*/
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  /*pseudo class*/
+  color: #648880;
+}
+#date {
+  width: 300px;
+  height: 40px;
+  background-color: #293f50;
+  color: #648880;
+  position: absolute;
+  top: 75px;
+  right: 310px;
+  font-size: 22px;
+}
+#sec1 {
+  margin: 220px 300px auto auto;
+  position: relative;
+}
+section > div {
+  width: 1000px;
+  height: 40px;
+  background-color: #293f50;
+  text-align: center;
+}
+#cc1 {
+  font-size: 30px;
+  color: #648880;
+}
+.cc {
+  /*class selector*/
+  font-size: 24px;
+  color: antiquewhite;
+}
+section > button {
+  border: 2px solid white;
+  color: antiquewhite;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 22px;
+  background-color: #293f50;
+  width: 250px;
+  height: 60px;
+  margin: 20px auto auto auto; /*box model property*/
+  position: absolute;
+  right: 370px;
+}
+section > button:hover {
+  /* child combinator+ pseudo class*/
+  background-color: white;
+  color: #293f50;
+  border-color: #293f50;
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  height: 510px;
+}
+main section {
+  display: grid; /*usage of grid property*/
+  width: 1000px;
+  height: 600px;
+  margin: 70px 275px auto auto;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 50px 200px 50px 200px;
+  justify-content: space-between;
+  grid-gap: 2px 5px;
+}
+h3 {
+  width: 200px;
+  height: 30px;
+  font-size: 26px;
+  text-transform: uppercase; /*text transform property*/
+  font-weight: bold;
+  color: #293f50;
+}
+main section > div {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  font-size: 20px;
+  text-align: left; /*text-align property*/
+  color: #293f50;
+}
+#pic1 {
+  background-image: url("https://jolly-kalam-23776e.netlify.app/styledconferences/assets/images/home/speakers.jpg"); /*background property*/
+  background-size: cover;
+  border-radius: 10px;
+}
+#pic2 {
+  background-image: url("https://jolly-kalam-23776e.netlify.app/styledconferences/assets/images/home/schedule.jpg"); /*background property*/
+  background-size: cover;
+  border-radius: 10px;
+}
+#pic3 {
+  background-image: url("https://jolly-kalam-23776e.netlify.app/styledconferences/assets/images/home/venue.jpg"); /*background property*/
+  background-size: cover;
+  border-radius: 10px;
+}
+h4 {
+  width: 300px;
+  height: 20px;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: left;
+  color: #293f50;
+}
+h4:hover {
+  color: grey;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #293f50;
+  position: relative;
+}
+#ipr {
+  color: #648880;
+  position: absolute;
+  top: 40px;
+  left: 350px;
+}
+#nav2 {
+  width: 400px;
+  height: 30px;
+  background-color: #293f50;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 300px;
+}
+#nav2 > div {
+  width: 150px;
+  height: 20px;
+  background-color: #293f50; /*background property*/
+  flex-wrap: nowrap;
+  font-size: 15px;
+  margin: 5px 5px; /*box model property*/
+  text-transform: capitalize;
+}
